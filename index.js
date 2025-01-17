@@ -26,28 +26,28 @@ const brianworks = [
 const brianSocials = [
      {
         "title" : "Twitter",
-        "icon" : `<i className="fa fa-twitter"></i>`,
+        "icon" : `<i class="fa fa-twitter white"></i>`,
         "url" : "https://www.twitter.com/iambriankemboi"
      },
      {
         "title" : "Github",
-        "icon" : `<i className="fa fa-github"></i>`,
+        "icon" : `<i class="fa fa-github white"></i>`,
         "url" : "https://www.github.com/briankeny"
      },
      {
         "title" : "Linked In",
-        "icon" : `<i className="fa fa-linkedin"></i>`,
-        "url" : "https://www.github.com/briankeny"
+        "icon" : `<i class="fa fa-linkedin white"></i>`,
+        "url" : "https://www.linkedin.com/in/brian-kipkemboi-aa949419a"
      },
      {
         "title" : "Whatsapp",
-        "icon" : `<i className="fa fa fa-whatsapp"></i>`,
+        "icon" : `<i class="fa fa fa-whatsapp white"></i>`,
         "url" : "https://wa.me/254721524154"
      }
 ]
 
 const footer  = document.querySelector('.footer-message')
-footer.innerHTML =  `&copy; ${new Date().getFullYear()} Brian Keny`
+footer.innerHTML =  `&copy; ${new Date().getFullYear()} Brian Kipkemboi Keny`
 
 const workEl = document.querySelector('.works-container');
 
@@ -61,3 +61,11 @@ const workHtml = brianworks.map((item, index) => `
 
 workEl.innerHTML = workHtml;
 
+
+const socials  = document.querySelector('.socials-container')
+
+const socialContent = brianSocials.map((item, index) => `
+  <a class="social-item" key=${index} href=${item.url}>${item.icon}</a>
+`).join(''); 
+
+socials.innerHTML = socialContent;

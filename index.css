@@ -1,4 +1,5 @@
-/* Header */
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
 nav {
     margin: 1.5rem 0;
 }
@@ -24,6 +25,21 @@ nav a:hover {
 .section-header {
     text-align: center;
     padding: 20px 0px;
+}
+/* About */
+
+.about {
+    font-family: "poppins";
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-item {
+    padding: 10px 10px;
 }
 
 /* Works section */
@@ -59,6 +75,8 @@ nav a:hover {
 
 .work-item p {
   text-align: left;
+  font-family: "poppins";
+  font-size: 1rem;
 }
 
 .work-item h3 {
@@ -89,4 +107,22 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 900px) {
+    .works-container { 
+    flex-wrap: wrap;
+    }
+    .work-item {
+        width: calc(100%/3);
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .work-item {
+        width: 90%;
+        margin: 20px 0px;
+    }
 }
