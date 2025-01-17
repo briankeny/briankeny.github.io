@@ -3,138 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+    <!-- Title and Description -->
+    <title>Brian Kipkemboi Keny | Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Brian Keny, a skilled Software Engineer with over 3 years of experience in designing, implementing, and testing software applications.">
 
-        header {
-            background: #282c34;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="Brian Keny, Software Engineer, Portfolio, Web Development, Programming, Software Applications">
 
-        header h1 {
-            font-size: 2.5rem;
-        }
+    <!-- Author -->
+    <meta name="author" content="Brian Kipkemboi Keny">
 
-        header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0 1rem;
-        }
+    <!-- Open Graph / Social Media Preview -->
+    <meta property="og:title" content="Brian Kipkemboi Keny | Software Engineer Portfolio">
+    <meta property="og:description" content="Explore my portfolio showcasing projects, skills, and experience as a Software Engineer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://briankeny.github.io">
+    <meta property="og:image" content="https://briankeny.github.io/assets/preview.png">
 
-        nav {
-            margin: 1.5rem 0;
-        }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brian Kipkemboi Keny | Software Engineer Portfolio">
+    <meta name="twitter:description" content="Explore my portfolio showcasing projects, skills, and experience as a Software Engineer.">
+    <meta name="twitter:image" content="https://briankeny.github.io/assets/preview.png">
 
-        nav a {
-            color: #61dafb;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
+    <!-- Favicon -->
+    <link rel="icon"  type="image/png" href="%PUBLIC_URL%/favicon.ico" />
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="index.css">
 
-        .container {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about, .projects, .contact {
-            margin-bottom: 2rem;
-        }
-
-        .about h2, .projects h2, .contact h2 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            color: #282c34;
-        }
-
-        .projects .project {
-            background: #f4f4f4;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-        }
-
-        .projects .project h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .projects .project p {
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            text-align: center;
-            background: #282c34;
-            color: #fff;
-            padding: 1rem 0;
-        }
-
-        footer a {
-            color: #61dafb;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    
 </head>
+
 <body>
+
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name], a [Your Profession].</p>
+        <h1>$Whoami</h1>
         <nav>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#works">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <div class="container">
+
         <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm a passionate [Your Profession/Skillset]. I specialize in [Your Specialization], and I love building things that make a difference.</p>
+            <h2>Hi there 👋</h2>
+            <p>I am Brian Keny, a Software Engineer with 3 + years of experience in designing, implementing, and testing software applications.</p>
         </section>
 
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your first project.</p>
-                <a href="#">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of your second project.</p>
-                <a href="#">View Project</a>
+        <section id="works" class="works-section">
+            <h2 class="section-header">My Works</h2>
+            <div class="works-container">
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
-        </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. Built with love and passion. <a href="#">Privacy Policy</a></p>
+        <p class="footer-message"></p>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
