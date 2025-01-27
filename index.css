@@ -142,6 +142,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
+    .about  h2 {
+        text-align: center;
+   }
     .work-item {
         width: 90%;
         margin: 20px 0px;
