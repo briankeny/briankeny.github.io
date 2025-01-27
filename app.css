@@ -20,3 +20,9 @@ body {
 .white {
     color: #fff;
 }
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}

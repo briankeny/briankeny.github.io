@@ -27,7 +27,7 @@ const brianSocials = [
      {
         "title" : "Twitter",
         "icon" : `<i class="fa fa-twitter white"></i>`,
-        "url" : "https://www.twitter.com/iambriankemboi"
+        "url" : "https://www.twitter.com/briankeny_"
      },
      {
         "title" : "Github",

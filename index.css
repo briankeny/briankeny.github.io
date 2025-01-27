@@ -26,16 +26,31 @@ nav a:hover {
     text-align: center;
     padding: 20px 0px;
 }
-/* About */
 
+.avatar {
+    float: left;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+/* About */
 .about {
     font-family: "poppins";
+    margin:0px 10px;
+}
+
+.about  h2 {
+     text-align: left;
 }
 
 .socials-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .social-item {
@@ -111,7 +126,13 @@ footer a:hover {
 
 
 @media screen and (max-width: 900px) {
-    .works-container { 
+    .flex {
+        flex-wrap: wrap;
+    }
+    .socials-container {
+        justify-content: center;
+    }
+        .works-container { 
     flex-wrap: wrap;
     }
     .work-item {
